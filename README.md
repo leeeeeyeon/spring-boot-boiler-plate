@@ -10,8 +10,28 @@
 - [ ] AOP를 통한 로깅
 
 # 💡API Response
-- [ ] 공통 Response 객체 생성
-- [ ] 공통 Exception 처리
+- [x] 공통 Response 객체 생성
+- [x] 공통 Exception 처리
+
+### Success Response
+```json
+{
+  "code": "S000",
+  "message": "OK",
+  "data": {
+    "id": 1,
+    "name": "test"
+  }
+}
+```
+
+### Error Response
+```json
+{
+  "code": "ER000",
+  "message": "에러 발생 원인에 대해 작성하기"
+}
+```
 
 # 💡 인증/인가
 >  HTTP 통신을 위해 Feign Client를 사용할 것 <br>
